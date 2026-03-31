@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - PetShop Amigo Fiel</title>
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- NAVBAR - COLE ANTES DE <main> EM TODAS PÁGINAS -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="index.html">
+            <i class="fas fa-paw me-2"></i>PetShop Amigo Fiel
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">🏠 Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">🛒 Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicos.html">✂️ Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro.html">📝 Cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="agendamento.html">📅 Agendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">📞 Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <main class="container my-5 pt-5">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h1 class="display-4 fw-bold text-primary mb-3">🛁 Nossos Serviços</h1>
+                <p class="lead text-muted">Banho e tosa profissional com ou sem tele-busca</p>
+            </div>
+        </div>
+
+        <div class="row g-5">
+            <!-- SERVIÇO 1: NO LOCAL -->
+            <div class="col-lg-6">
+                <div class="card h-100 shadow-lg border-0 overflow-hidden">
+                    <div class="card-header bg-success text-white py-4">
+                        <h2 class="mb-0 text-center"><i class="fas fa-store me-2"></i>No Local</h2>
+                    </div>
+                    <img src= "/images/banho-local.jfif" class="card-img-top" alt="Banho e tosa realizado em nossa loja" style="height:350px;object-fit:cover;">
+                    <div class="card-body p-4">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Banho com shampoo premium</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Tosa higiênica ou artística</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Corte de unhas</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Limpeza de orelhas</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Secagem completa</li>
+                        </ul>
+                        <div class="text-center mt-4">
+                            <h3 class="text-success mb-2">A partir de <span class="fs-1">R$85</span></h3>
+                            <p class="text-muted mb-3">Pequeno porte</p>
+                            <a href="agendamento.html" class="btn btn-success btn-lg px-4">
+                                <i class="fas fa-calendar-plus me-2"></i>Agendar Agora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVIÇO 2: TELE-BUSCA -->
+            <div class="col-lg-6">
+                <div class="card h-100 shadow-lg border-0 overflow-hidden">
+                    <div class="card-header bg-primary text-white py-4">
+                        <h2 class="mb-0 text-center"><i class="fas fa-car me-2"></i>Tele-Busca</h2>
+                    </div>
+                    <img src="/images/telebusca.jfif" class="card-img-top" alt="Serviço com busca e entrega em casa" style="height:350px;object-fit:cover;">
+                    <div class="card-body p-4">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Todos serviços do "No Local"</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Busca em casa (raio 10km)</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Entrega em casa</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Horário flexível</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Seguro transporte</li>
+                        </ul>
+                        <div class="text-center mt-4">
+                            <h3 class="text-primary mb-2">A partir de <span class="fs-1">R$125</span></h3>
+                            <p class="text-muted mb-3">Pequeno porte + transporte</p>
+                            <a href="agendamento.html" class="btn btn-primary btn-lg px-4">
+                                <i class="fas fa-calendar-plus me-2"></i>Agendar Agora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>🐾 PetShop Amigo Fiel</h5>
+                    <p>Rua dos Bobos, 0 - Belo Horizonte, MG</p>
+                    <p>📧 contato@petshopamigofiel.com</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <nav aria-label="Links de navegação do rodapé">
+                        <a href="index.html" class="text-white me-3">Início</a>
+                        <a href="produtos.html" class="text-white me-3">Produtos</a>
+                        <a href="servicos.html" class="text-white me-3">Serviços</a>
+                        <a href="agendamento.html" class="text-white">Agendar</a>
+                    </nav>
+                </div>
+            </div>
+            <hr class="my-3">
+            <p class="text-center mb-0">&copy; 2024 PetShop Amigo Fiel. Desenvolvido para disciplina de Desenvolvimento Web - Fase 2.</p>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

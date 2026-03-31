@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - PetShop Amigo Fiel</title>
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="index.html">
+            <i class="fas fa-paw me-2"></i>PetShop Amigo Fiel
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">🏠 Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">🛒 Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicos.html">✂️ Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro.html">📝 Cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="agendamento.html">📅 Agendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">📞 Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <main class="container my-5 pt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card shadow-lg border-0">
+                    <div class="card-header bg-primary text-white text-center py-4">
+                        <h1 class="mb-0"><i class="fas fa-user-plus me-3"></i>Cadastro Cliente + Pet</h1>
+                    </div>
+                    <div class="card-body p-5">
+                        <form id="formCadastro" novalidate>
+                            <!-- CLIENTE -->
+                            <h4 class="text-primary mb-4"><i class="fas fa-user me-2"></i>Dados do Cliente</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Nome Completo <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control form-control-lg" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">CPF <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control form-control-lg" maxlength="14" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">E-mail <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control form-control-lg" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Telefone <span class="text-danger">*</span></label>
+                                    <input type="tel" class="form-control form-control-lg" required>
+                                </div>
+                            </div>
+
+                            <!-- PET -->
+                            <h4 class="text-success mt-5 mb-4"><i class="fas fa-paw me-2"></i>Dados do Pet</h4>
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <label class="form-label fw-bold">Nome do Pet <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control form-control-lg" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label fw-bold">Raça <span class="text-danger">*</span></label>
+                                    <select class="form-select form-select-lg" required>
+                                        <option value="">Selecione...</option>
+                                        <option>Pitbull</option>
+                                        <option>Shitzu</option>
+                                        <option>SRD</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label fw-bold">Idade (anos)</label>
+                                    <input type="number" class="form-control form-control-lg" min="0" max="30">
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Sexo Pet</label><br>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sexoPet">
+                                        <label class="form-check-label">Macho</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sexoPet">
+                                        <label class="form-check-label">Fêmea</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Porte</label><br>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="portePet">
+                                        <label class="form-check-label">P</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="portePet">
+                                        <label class="form-check-label">M</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="portePet">
+                                        <label class="form-check-label">G</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 d-grid gap-2 d-md-flex justify-content-end">
+                                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Limpar</button>
+                                <button type="submit" class="btn btn-primary btn-lg px-4">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER SIMPLES -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>🐾 PetShop Amigo Fiel</h5>
+                    <p>Rua dos Bobos, 0 - Belo Horizonte, MG</p>
+                    <p>📧 contato@petshopamigofiel.com</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <nav aria-label="Links de navegação do rodapé">
+                        <a href="index.html" class="text-white me-3">Início</a>
+                        <a href="produtos.html" class="text-white me-3">Produtos</a>
+                        <a href="servicos.html" class="text-white me-3">Serviços</a>
+                        <a href="agendamento.html" class="text-white">Agendar</a>
+                    </nav>
+                </div>
+            </div>
+            <hr class="my-3">
+            <p class="text-center mb-0">&copy; 2024 PetShop Amigo Fiel. Desenvolvido para disciplina de Desenvolvimento Web - Fase 2.</p>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('formCadastro').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ Cadastro realizado com sucesso!');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - PetShop Amigo Fiel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+<!-- NAVBAR - COLE ANTES DE <main> EM TODAS PÁGINAS -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="index.html">
+            <i class="fas fa-paw me-2"></i>PetShop Amigo Fiel
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">🏠 Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">🛒 Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicos.html">✂️ Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro.html">📝 Cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="agendamento.html">📅 Agendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">📞 Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-4 text-primary mb-5 text-center">🍖 Nossos Produtos</h1>
+            </div>
+        </div>
+
+        <!-- ACESSÓRIOS -->
+        <section id="acessorios" class="mb-5">
+            <h2 class="h3 text-success mb-4 text-center">🎀 Acessórios</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-lg">
+                        <img src="images/acessorio1.jpg" class="card-img-top" alt="Coleira Premium com LED para passeios noturnos - segurança total para seu pet" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Coleira Premium LED</h5>
+                            <p class="card-text">Coleira confortável com luz LED para passeios noturnos. Tamanho ajustável M-G.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h4 text-danger fw-bold">R$ 89,90</span>
+                                <button class="btn btn-primary btn-lg" onclick="adicionarCarrinho('Coleira LED')">🛒 Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-lg">
+                        <img src="images/acessorio2.jpg" class="card-img-top" alt="Brinquedo interativo mordedor que alivia ansiedade e estimula mastigação" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Brinquedo Mordedor</h5>
+                            <p class="card-text">Durável, estimula mastigação e alivia ansiedade. Aprovado por veterinários.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h4 text-danger fw-bold">R$ 45,90</span>
+                                <button class="btn btn-primary btn-lg" onclick="adicionarCarrinho('Brinquedo Mordedor')">🛒 Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RAÇÕES -->
+        <section id="racoes" class="mb-5">
+            <h2 class="h3 text-success mb-4 text-center">🥣 Rações Premium</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-lg">
+                        <img src="images/racao1.jpg" class="card-img-top" alt="Coleira Premium com LED para passeios noturnos - segurança total para seu pet" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Ração Golden</h5>
+                            <p class="card-text">Ração Golden Special Gatos Adultos Frango e Carne</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h4 text-danger fw-bold">R$ 89,90</span>
+                                <button class="btn btn-primary btn-lg" onclick="adicionarCarrinho('Coleira LED')">🛒 Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-lg">
+                        <img src="images/racao2.jpg" class="card-img-top" alt="Brinquedo interativo mordedor que alivia ansiedade e estimula mastigação" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Ração Especial Dog</h5>
+                            <p class="card-text">Ração Cães Adultos Carne Special Dog</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h4 text-danger fw-bold">R$ 45,90</span>
+                                <button class="btn btn-primary btn-lg" onclick="adicionarCarrinho('Brinquedo Mordedor')">🛒 Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HIGIENE -->
+        <section id="higiene">
+            <h2 class="h3 text-success mb-4 text-center">🧼 Higiene</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-lg">
+                        <img src="images/higiene1.jpg" class="card-img-top" alt="Coleira Premium com LED para passeios noturnos - segurança total para seu pet" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Shampoo 5 em 1</h5>
+                            <p class="card-text">Shampoo 5 em 1 para Cães e Gatos Pet Clean</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h4 text-danger fw-bold">R$ 89,90</span>
+                                <button class="btn btn-primary btn-lg" onclick="adicionarCarrinho('Coleira LED')">🛒 Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-lg">
+                        <img src="images/higiene2.jpg" class="card-img-top" alt="Brinquedo interativo mordedor que alivia ansiedade e estimula mastigação" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Eliminador de Odores</h5>
+                            <p class="card-text">Eliminador de Odores Sanol Cat 500ml</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h4 text-danger fw-bold">R$ 45,90</span>
+                                <button class="btn btn-primary btn-lg" onclick="adicionarCarrinho('Brinquedo Mordedor')">🛒 Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER PADRÃO -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>🐾 PetShop Amigo Fiel</h5>
+                    <p>Rua dos Bobos, 0 - Belo Horizonte, MG</p>
+                    <p>📧 contato@petshopamigofiel.com</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <nav aria-label="Links de navegação do rodapé">
+                        <a href="index.html" class="text-white me-3">Início</a>
+                        <a href="produtos.html" class="text-white me-3">Produtos</a>
+                        <a href="servicos.html" class="text-white me-3">Serviços</a>
+                        <a href="agendamento.html" class="text-white">Agendar</a>
+                    </nav>
+                </div>
+            </div>
+            <hr class="my-3">
+            <p class="text-center mb-0">&copy; 2024 PetShop Amigo Fiel. Desenvolvido para disciplina de Desenvolvimento Web - Fase 2.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

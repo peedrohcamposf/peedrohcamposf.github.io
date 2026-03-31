@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - PetShop Amigo Fiel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="index.html">
+            <i class="fas fa-paw me-2"></i>PetShop Amigo Fiel
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">🏠 Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="produtos.html">🛒 Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="servicos.html">✂️ Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="cadastro.html">📝 Cadastro</a></li>
+                <li class="nav-item"><a class="nav-link" href="agendamento.html">📅 Agendar</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contato.html">📞 Contato</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container my-5 pt-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-info text-white text-center py-4">
+                    <h1 class="mb-0"><i class="fas fa-envelope me-3"></i>Entre em Contato</h1>
+                    <p class="mb-0 mt-2">Estamos aqui para ajudar seu pet! 🐾</p>
+                </div>
+
+                <div class="card-body p-5">
+                    <div class="row">
+                        <div class="col-lg-4 mb-4">
+                            <div class="text-center p-4 bg-light rounded-3">
+                                <i class="fas fa-map-marker-alt fa-3x text-danger mb-3"></i>
+                                <h5>Endereço</h5>
+                                <p class="mb-0">Rua das Petúnias, 123<br>Jardim Canino<br>São Paulo - SP<br>CEP: 01234-567</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-4">
+                            <div class="text-center p-4 bg-light rounded-3">
+                                <i class="fas fa-phone fa-3x text-success mb-3"></i>
+                                <h5>Telefone</h5>
+                                <p class="mb-0">
+                                    <a href="tel:+5511999999999" class="text-decoration-none">
+                                        (11) 99999-9999<br>WhatsApp / Ligação
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-4">
+                            <div class="text-center p-4 bg-light rounded-3">
+                                <i class="fas fa-clock fa-3x text-warning mb-3"></i>
+                                <h5>Horário</h5>
+                                <p class="mb-0">Seg-Sex: 8h às 18h<br>Sáb: 8h às 14h<br>Dom: Fechado</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="formContato" class="mt-5" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <label for="nomeContato" class="form-label fw-bold">Nome Completo <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-lg" id="nomeContato" required placeholder="Seu nome completo">
+                                <div class="invalid-feedback">Nome é obrigatório</div>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <label for="emailContato" class="form-label fw-bold">E-mail <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control form-control-lg" id="emailContato" required placeholder="seu@email.com">
+                                <div class="invalid-feedback">E-mail válido é obrigatório</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <label for="telefoneContato" class="form-label fw-bold">Telefone/WhatsApp</label>
+                                <input type="tel" class="form-control form-control-lg" id="telefoneContato" placeholder="(11) 99999-9999">
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <label for="assunto" class="form-label fw-bold">Assunto <span class="text-danger">*</span></label>
+                                <select class="form-select form-select-lg" id="assunto" required>
+                                    <option value="">Selecione o assunto...</option>
+                                    <option value="agendamento">Agendamento de Serviço</option>
+                                    <option value="produto">Dúvida sobre Produto</option>
+                                    <option value="orcamento">Orçamento</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                                <div class="invalid-feedback">Selecione um assunto</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="mensagem" class="form-label fw-bold">Mensagem <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="mensagem" rows="6" required placeholder="Descreva sua dúvida ou solicitação..."></textarea>
+                            <div class="invalid-feedback">Mensagem é obrigatória</div>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button type="button" class="btn btn-outline-secondary btn-lg px-4 me-md-2" onclick="limparContato()">
+                                <i class="fas fa-redo me-2"></i>Limpar
+                            </button>
+                            <button type="submit" class="btn btn-info btn-lg px-4">
+                                <i class="fas fa-paper-plane me-2"></i>Enviar Mensagem
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer (agora correto e consistente) -->
+<footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>🐾 PetShop Amigo Fiel</h5>
+                <p>Rua das Petúnias, 123 - São Paulo, SP</p>
+                <p>📧 contato@petshopamigofiel.com</p>
+            </div>
+
+            <div class="col-md-6 text-md-end">
+                <nav>
+                    <a href="index.html" class="text-white me-3">Início</a>
+                    <a href="produtos.html" class="text-white me-3">Produtos</a>
+                    <a href="servicos.html" class="text-white me-3">Serviços</a>
+                    <a href="agendamento.html" class="text-white">Agendar</a>
+                </nav>
+            </div>
+        </div>
+
+        <hr class="my-3">
+
+        <p class="text-center mb-0">
+            &copy; 2024 PetShop Amigo Fiel. Desenvolvido para disciplina de Desenvolvimento Web.
+        </p>
+    </div>
+</footer>
+
+<!-- Scripts corrigidos -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+document.getElementById('formContato').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    setTimeout(() => {
+        alert('✅ Mensagem enviada com sucesso!\n\nEntraremos em contato em breve. 🐾');
+        this.reset();
+    }, 1000);
+});
+
+function limparContato() {
+    document.getElementById('formContato').reset();
+}
+</script>
+
+</body>
+</html>

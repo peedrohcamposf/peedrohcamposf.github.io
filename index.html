@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop Amigo Fiel - Fase 2</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Icones para as box-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="index.html">
+            <i class="fas fa-paw me-2"></i>PetShop Amigo Fiel
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">🏠 Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">🛒 Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicos.html">✂️ Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro.html">📝 Cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="agendamento.html">📅 Agendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">📞 Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- CARROSSEL PRINCIPAL -->
+    <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel" aria-label="Carrossel promocional">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/banho-local.jfif" class="d-block w-100 carousel-img" alt="Promoção: 20% OFF em banho e tosa esta semana">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>🐕 20% OFF Banho e Tosa!</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/acessorio1.jpg" class="d-block w-100 carousel-img" alt="Novos acessórios chegadas para seu pet">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>🆕 Novos Acessórios!</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/racao1.jpg" class="d-block w-100 carousel-img" alt="Rações premium com entrega grátis">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>🚚 Entrega Grátis Rações!</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="display-4 text-primary mb-4">Bem-vindo ao PetShop Amigo Fiel!🐾</h1>
+                <p class="lead">Cuidamos do seu melhor amigo com carinho e profissionalismo. Produtos de qualidade e serviços premium!</p>
+                
+ <div class="row mt-5">
+    <div class="col-md-4 text-center">
+        <div class="card h-100 shadow-sm">
+            <!-- PRODUTOS 🛒 -->
+            <i class="fas fa-shopping-cart fa-4x text-primary mt-3 mb-3 d-block" aria-hidden="true" alt="Ícone de produtos para pets"></i>
+            <div class="card-body">
+                <h5 class="card-title">Produtos</h5>
+                <p class="card-text">Acessórios, rações e higiene para todos os pets.</p>
+                <a href="produtos.html" class="btn btn-primary">Ver Produtos</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <div class="card h-100 shadow-sm">
+            <!-- SERVIÇOS ✂️ -->
+            <i class="fas fa-cut fa-4x text-success mt-3 mb-3 d-block" aria-hidden="true" alt="Ícone de serviços de banho e tosa"></i>
+            <div class="card-body">
+                <h5 class="card-title">Serviços</h5>
+                <p class="card-text">Banho, tosa e tele-busca com agendamento.</p>
+                <a href="servicos.html" class="btn btn-primary">Ver Serviços</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <div class="card h-100 shadow-sm">
+            <!-- AGENDAMENTO 📅 -->
+            <i class="fas fa-calendar-alt fa-4x text-warning mt-3 mb-3 d-block" aria-hidden="true" alt="Ícone de agendamento"></i>
+            <div class="card-body">
+                <h5 class="card-title">Agendamento</h5>
+                <p class="card-text">Agende banho/tosa com ou sem busca.</p>
+                <a href="agendamento.html" class="btn btn-primary">Agendar Agora</a>
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>🐾 PetShop Amigo Fiel</h5>
+                    <p>Rua dos Bobos, 0 - Belo Horizonte, MG</p>
+                    <p>📧 contato@petshopamigofiel.com</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <nav aria-label="Links de navegação do rodapé">
+                        <a href="index.html" class="text-white me-3">Início</a>
+                        <a href="produtos.html" class="text-white me-3">Produtos</a>
+                        <a href="servicos.html" class="text-white me-3">Serviços</a>
+                        <a href="agendamento.html" class="text-white">Agendar</a>
+                    </nav>
+                </div>
+            </div>
+            <hr class="my-3">
+            <p class="text-center mb-0">&copy; 2024 PetShop Amigo Fiel. Desenvolvido para disciplina de Desenvolvimento Web - Fase 2.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
